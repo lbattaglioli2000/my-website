@@ -1,0 +1,71 @@
+title: 'Social Media'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: social_media
+    field:
+      fields:
+        -
+          handle: icon
+          field:
+            type: icon
+            display: Icon
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            directory: resources/icons/social
+            default: facebook
+            hide_display: false
+        -
+          handle: social
+          field:
+            input_type: text
+            antlers: false
+            display: Social
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+        -
+          handle: social_username
+          field:
+            input_type: text
+            antlers: false
+            display: 'Social username'
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+            validate:
+              - required
+        -
+          handle: link
+          field:
+            input_type: url
+            antlers: false
+            display: Link
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+      mode: table
+      reorderable: true
+      display: Social
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required
+      visibility: visible
+      fullscreen: true
+      hide_display: false

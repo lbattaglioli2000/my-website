@@ -1,0 +1,8 @@
+name: 'Luigi Battaglioli]'
+super: true
+id: 11dddfa7-c382-4e93-9a64-acba96069cf4
+password_hash: $2y$12$4vov6NHQV1uRsVa/RFg8jeNEd0L801jtQ0jm1tcxur1oVeQGkrJam
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

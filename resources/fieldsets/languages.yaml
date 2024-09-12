@@ -1,0 +1,63 @@
+title: Languages
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: languages
+    field:
+      fields:
+        -
+          handle: icon
+          field:
+            type: icon
+            display: Icon
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+            width: 25
+            directory: resources/icons/flags
+            default: en
+        -
+          handle: name
+          field:
+            input_type: text
+            antlers: false
+            display: Name
+            type: text
+            icon: text
+            width: 50
+            listable: hidden
+            instructions_position: above
+            validate:
+              - required
+        -
+          handle: level
+          field:
+            input_type: text
+            antlers: false
+            display: Level
+            type: text
+            icon: text
+            instructions: 'Native, Proficient, etc.'
+            width: 25
+            listable: hidden
+            instructions_position: above
+      mode: table
+      reorderable: true
+      display: Languages
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      fullscreen: true
+      hide_display: false
